@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '84-assignment-practice';
+  numberReceived: number = 0; 
+
+  onNumberIncremented(event: {num: number}) {
+    this.numberReceived = event.num;
+  }
 }
